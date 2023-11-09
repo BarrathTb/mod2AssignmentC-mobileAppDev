@@ -22,6 +22,7 @@ namespace mod2AssignmentC
         {
             currentMorseCode += ".";
             UpdateDotsAndDashesLabel();
+
         }
 
         private void Dash_Clicked(object sender, EventArgs e)
@@ -50,11 +51,13 @@ namespace mod2AssignmentC
         private void UpdateDotsAndDashesLabel()
         {
             dotsAndDashesLabel.Text = currentMorseCode;
+            dotsAndDashesLabel2.Text = currentMorseCode;
         }
 
         private void UpdateLettersAndWordsLabel()
         {
             lettersAndWordsLabel.Text = decodedText;
+            
         }
     }
 }

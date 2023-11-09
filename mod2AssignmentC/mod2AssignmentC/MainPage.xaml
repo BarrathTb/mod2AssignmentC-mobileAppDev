@@ -16,10 +16,23 @@
             </StackLayout>
         </Frame>
 
-        <Frame BackgroundColor="#333333" CornerRadius="10" Padding="10" Margin="0,20,0,0">
+        <Frame BackgroundColor="#333333" CornerRadius="10" Padding="10" Margin="0,10,0,10">
             <StackLayout>
                 <Label Text="Letters and Words" TextColor="White" HorizontalOptions="Center" FontSize="18" Margin="0,0,0,10" />
                 <Label x:Name="lettersAndWordsLabel" TextColor="White" HorizontalOptions="Center" FontSize="16" />
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="#333333" CornerRadius="10" Padding="10,10,10,20">
+            <StackLayout>
+                <Label Text="Dots and Dashes until a space is pressed" HorizontalOptions="Center" TextColor="White" FontSize="18" Margin="0,0,0,10" />
+                <Label x:Name="dotsAndDashesLabel2" TextColor="White" HorizontalOptions="Center" FontSize="16" />
+                <Button Text="Space" Clicked="Space_Clicked" BackgroundColor="blue"  TextColor="White" CornerRadius="20" Margin="0,10,0,0" Style="{StaticResource ButtonStyle}" />
+                <StackLayout  Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                    <Button Text="Dot" Clicked="Dot_Clicked" BackgroundColor="#2ecc71" TextColor="White" HorizontalOptions="FillAndExpand" CornerRadius="20" Margin="0,10,0,0" Style="{StaticResource ButtonStyle}" />
+                    <Button Text="Dash" Clicked="Dash_Clicked" BackgroundColor="#e74c3c" TextColor="White" HorizontalOptions="FillAndExpand" CornerRadius="20" Margin="0,10,0,0" Style="{StaticResource ButtonStyle}" />
+                </StackLayout>
+                
             </StackLayout>
         </Frame>
     </StackLayout>
